@@ -17,6 +17,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+
+        <!-- ROM build date -->
+        <Preference android:key="build_date"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
