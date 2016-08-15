@@ -28,15 +28,8 @@ public class About extends SettingsPreferenceFragment {
     Preference mCommunityUrl;
     Preference mSourceUrl;
     Preference mMyXdaUrl;
-    Preference mMyGithubUrl;
     Preference mMyGooglePlusUrl;
-    Preference mMickybartUrl;
-    Preference mJonathanUrl;
-    Preference mOmniUrl;
-    Preference mBitsykoUrl;
-    Preference mChainfireUrl;
-    Preference mXdaUrl;
-    Preference mGoogleUrl;
+    Preference mDonateMeUrl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,16 +40,8 @@ public class About extends SettingsPreferenceFragment {
         mCommunityUrl = findPreference("oneofakind_community");
         mSourceUrl = findPreference("oneofakind_source");
         mMyXdaUrl = findPreference("developer_xda");
-        mMyGithubUrl = findPreference("developer_github");
         mMyGooglePlusUrl = findPreference("developer_google_plus");
-        mMickybartUrl = findPreference("credits_mickybart");
-        mJonathanUrl = findPreference("credits_jonathan");
-        mOmniUrl = findPreference("credits_omnirom");
-        mBitsykoUrl = findPreference("credits_bitsyko");
-        mChainfireUrl = findPreference("credits_chainfire");
-        mXdaUrl = findPreference("credits_xda");
-        mGoogleUrl = findPreference("credits_google");
-
+        mDonateMeUrl = findPreference("developer_donation");
     }
 
     @Override
@@ -66,27 +51,13 @@ public class About extends SettingsPreferenceFragment {
         } else if (preference == mCommunityUrl) {
             launchUrl("https://plus.google.com/communities/109430183766691539019");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/Oneofakind-AOSP");
+            launchUrl("https://github.com/oneofakind-aosp");
         } else if (preference == mMyXdaUrl) {
             launchUrl("http://forum.xda-developers.com/member.php?u=4887164");
-        } else if (preference == mMyGithubUrl) {
-            launchUrl("https://github.com/ipromeh");
+        } else if (preference == mDonateMeUrl) {
+            launchUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M5YPM55K2PM8J");
         } else if (preference == mMyGooglePlusUrl) {
             launchUrl("https://plus.google.com/116487239818811681953");
-        } else if (preference == mMickybartUrl) {
-            launchUrl("http://forum.xda-developers.com/member.php?u=6043081");
-        } else if (preference == mJonathanUrl) {
-            launchUrl("http://forum.xda-developers.com/member.php?u=5176116");
-        } else if (preference == mOmniUrl) {
-            launchUrl("http://forum.xda-developers.com/omni");
-        } else if (preference == mBitsykoUrl) {
-            launchUrl("https://plus.google.com/communities/102261717366580091389");
-        } else if (preference == mChainfireUrl) {
-            launchUrl("http://forum.xda-developers.com/member.php?u=631273");
-        } else if (preference == mXdaUrl) {
-            launchUrl("http://www.xda-developers.com/");
-        } else if (preference == mGoogleUrl) {
-            launchUrl("https://android.googlesource.com/");
         } else if (preference.getKey().equals(KEY_ONEOFAKIND_SHARE)) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
