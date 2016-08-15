@@ -63,22 +63,31 @@
         android:title="@string/credits_oneofakind">
         <!-- Credits -->
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits1_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits2_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits3_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits4_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits5_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits6_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits7_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits8_title" />
         <Preference
+            android:key="credits_mention"
             android:title="@string/credits9_title" />
 
     </PreferenceCategory>

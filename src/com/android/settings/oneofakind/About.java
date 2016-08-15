@@ -30,6 +30,7 @@ public class About extends SettingsPreferenceFragment {
     Preference mMyXdaUrl;
     Preference mMyGooglePlusUrl;
     Preference mDonateMeUrl;
+    Preference mDoNothing;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class About extends SettingsPreferenceFragment {
         mMyXdaUrl = findPreference("developer_xda");
         mMyGooglePlusUrl = findPreference("developer_google_plus");
         mDonateMeUrl = findPreference("developer_donation");
+        mDoNothing = findPreference("credits_mention")
     }
 
     @Override
@@ -58,6 +60,8 @@ public class About extends SettingsPreferenceFragment {
             launchUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M5YPM55K2PM8J");
         } else if (preference == mMyGooglePlusUrl) {
             launchUrl("https://plus.google.com/116487239818811681953");
+        } else if (preference == mDoNothing) {
+            // Do nothing
         } else if (preference.getKey().equals(KEY_ONEOFAKIND_SHARE)) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
