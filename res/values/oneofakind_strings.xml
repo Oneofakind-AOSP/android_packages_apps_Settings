@@ -46,5 +46,8 @@
     <string name="credits_google_title">Google</string>
     <string name="credits_google_summary">For Android Open Source Project base</string>
 
+    <!-- SystemUI Tuner migration -->
+    <string name="system_ui_tuner">SystemUI Tuner</string>
+
 </resources>
 
