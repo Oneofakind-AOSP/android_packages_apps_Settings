@@ -3,6 +3,7 @@ package com.android.settings.oneofakind;
 import com.android.internal.logging.MetricsLogger;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.widget.Toast;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -43,7 +45,7 @@ public class About extends SettingsPreferenceFragment {
         mMyXdaUrl = findPreference("developer_xda");
         mMyGooglePlusUrl = findPreference("developer_google_plus");
         mDonateMeUrl = findPreference("developer_donation");
-        mDoNothing = findPreference("credits_mention")
+        mDoNothing = findPreference("credits_mention");
     }
 
     @Override
@@ -74,9 +76,13 @@ public class About extends SettingsPreferenceFragment {
     }
 
     private void launchUrl(String url) {
+      try {
         Uri uriUrl = Uri.parse(url);
         Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
         getActivity().startActivity(donate);
+      } catch (ActivityNotFoundException ex) {
+          Toast.makeText(getActivity().getApplicationContext(), "Please install a browser app", Toast.LENGTH_SHORT).show();
+      }
     }
 
     @Override
