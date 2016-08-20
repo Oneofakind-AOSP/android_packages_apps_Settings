@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/about_oneofakind"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:key="about"
+        android:title="@string/about_oneofakind">
+
+        <!-- Oneofakind Share -->
+        <Preference
+            android:key="share"
+            android:title="@string/share_oneofakind_title"
+            android:summary="@string/share_oneofakind_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="website"
+        android:title="@string/website_oneofakind">
+
+        <!-- Oneofakind Website -->
+        <Preference
+            android:key="oneofakind_website"
+            android:title="@string/oneofakind_website_title"
+            android:summary="@string/oneofakind_website_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="community"
+        android:title="@string/community_oneofakind">
+
+        <!-- Oneofakind Community -->
+        <Preference
+            android:key="oneofakind_community"
+            android:title="@string/oneofakind_community_title"
+            android:summary="@string/oneofakind_community_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="source"
+        android:title="@string/source_oneofakind">
+
+        <!-- Oneofakind Github -->
+        <Preference
+            android:key="oneofakind_source"
+            android:title="@string/oneofakind_source_title"
+            android:summary="@string/oneofakind_source_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="developer"
+        android:title="@string/developer_oneofakind">
+
+        <!-- My XDA -->
+        <Preference
+            android:key="developer_xda"
+            android:title="@string/developer_xda_title"
+            android:summary="@string/developer_xda_summary" />
+
+        <!-- My Github -->
+        <Preference
+            android:key="developer_github"
+            android:title="@string/developer_github_title"
+            android:summary="@string/developer_github_summary" />
+
+        <!-- My Google+ -->
+        <Preference
+            android:key="developer_google_plus"
+            android:title="@string/developer_google_plus_title"
+            android:summary="@string/developer_google_plus_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="credits"
+        android:title="@string/credits_oneofakind">
+
+        <!-- mickybart -->
+        <Preference
+            android:key="credits_mickybart"
+            android:title="@string/credits_mickybart_title"
+            android:summary="@string/credits_minimalos_summary" />
+
+        <!-- jonathan -->
+        <Preference
+            android:key="credits_jonathan"
+            android:title="@string/credits_jonathan_title"
+            android:summary="@string/credits_jonathan_summary" />
+
+        <!-- omnirom -->
+        <Preference
+            android:key="credits_omnirom"
+            android:title="@string/credits_omnirom_title"
+            android:summary="@string/credits_omnirom_summary" />
+
+        <!-- bitsyko -->
+        <Preference
+            android:key="credits_bitsyko"
+            android:title="@string/credits_bitsyko_title"
+            android:summary="@string/credits_bitsyko_summary" />
+
+        <!-- chainfire -->
+        <Preference
+            android:key="credits_chainfire"
+            android:title="@string/credits_chainfire_title"
+            android:summary="@string/credits_chainfire_summary" />
+
+        <!-- xda -->
+        <Preference
+            android:key="credits_xda"
+            android:title="@string/credits_xda_title"
+            android:summary="@string/credits_xda_summary" />
+
+        <!-- google -->
+        <Preference
+            android:key="credits_google"
+            android:title="@string/credits_google_title"
+            android:summary="@string/credits_google_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

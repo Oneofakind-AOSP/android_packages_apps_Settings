@@ -17,6 +17,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- About Oneofakind -->
+        <PreferenceScreen android:key="about"
+                android:title="@string/about_oneofakind"
+                android:fragment="com.android.settings.oneofakind.About" />
 
         <!-- ROM build date -->
         <Preference android:key="build_date"
