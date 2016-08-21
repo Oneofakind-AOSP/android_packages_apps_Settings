@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The ROM name -->
+    <string name="rom_oneofakind">Oneofakind\u2122</string>
 
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Oneofakind\u2122 build date</string>
@@ -38,6 +40,9 @@
     <string name="credits8_title">snak3ater</string>
     <string name="credits9_title">EmojiOne</string>
 
+    <!-- Development Opions -->
+    <!-- Substratum -->
+    <string name="substratum_title">Substratum</string>
     <!-- SystemUI Tuner migration -->
     <string name="system_ui_tuner">SystemUI Tuner</string>
 
