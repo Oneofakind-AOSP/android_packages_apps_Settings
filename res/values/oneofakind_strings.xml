@@ -40,6 +40,11 @@
     <string name="credits8_title">snak3ater</string>
     <string name="credits9_title">EmojiOne</string>
 
+   <!-- Manage applications: show substratum overlays -->
+   <string name="filter_substratum_apps">Substratum overlays</string>
+   <string name="menu_show_substratum">Show overlays</string>
+   <string name="menu_hide_substratum">Hide overlays</string>
+
     <!-- Development Opions -->
     <!-- Substratum -->
     <string name="substratum_title">Substratum</string>
